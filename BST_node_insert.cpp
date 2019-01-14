@@ -1,4 +1,4 @@
-//Binary search tree
+//Binary search tree insertion
 
 #include<bits/stdc++.h>
 
@@ -92,7 +92,7 @@ Node *create_BST(Node *root,Node *child)
 
 }
 
-void show_BST(Node *root)
+void show_BST_in_Preorder(Node *root)
 {
     cout<<root->data<<" ";
 
@@ -134,6 +134,8 @@ int main()
 
         root=create_BST(root,insert_item);
     }
+    
+    show_BST_in_Preorder(root);
 
     return 0;
 }
